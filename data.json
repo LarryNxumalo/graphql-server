@@ -1,0 +1,100 @@
+{
+  "customers": [
+    {
+      "id": "1",
+      "name": "Larry Doe",
+      "email": "ldoe@gmail.com",
+      "age": 100
+    },
+    {
+      "id": "2",
+      "name": "Sarah Williams",
+      "email": "sarah@gmail.com",
+      "age": 22
+    },
+    {
+      "id": "3",
+      "name": "Steve Johns",
+      "email": "steveo@gmail.com",
+      "age": 25
+    },
+    {
+      "id": "4",
+      "name": "Rah Williams",
+      "email": "rah@gmail.com",
+      "age": 89
+    },
+    {
+      "id": "5",
+      "name": "Steve Jobs",
+      "email": "stevejobs@gmail.com",
+      "age": 50
+    },
+    {
+      "operationName": "getRockets",
+      "variables": {},
+      "query": "query getRockets {\n  capsule(id: \"\") {\n    id\n    __typename\n  }\n  rockets {\n    id\n    name\n    description\n    cost_per_launch\n    __typename\n  }\n}\n",
+      "id": "5Qa-DMp"
+    },
+    {
+      "operationName": "IntrospectionQuery",
+      "variables": {},
+      "query": "query IntrospectionQuery {\n  __schema {\n    queryType {\n      name\n      __typename\n    }\n    mutationType {\n      name\n      __typename\n    }\n    subscriptionType {\n      name\n      __typename\n    }\n    types {\n      ...FullType\n      __typename\n    }\n    directives {\n      name\n      description\n      locations\n      args {\n        ...InputValue\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n\nfragment FullType on __Type {\n  kind\n  name\n  description\n  fields(includeDeprecated: true) {\n    name\n    description\n    args {\n      ...InputValue\n      __typename\n    }\n    type {\n      ...TypeRef\n      __typename\n    }\n    isDeprecated\n    deprecationReason\n    __typename\n  }\n  inputFields {\n    ...InputValue\n    __typename\n  }\n  interfaces {\n    ...TypeRef\n    __typename\n  }\n  enumValues(includeDeprecated: true) {\n    name\n    description\n    isDeprecated\n    deprecationReason\n    __typename\n  }\n  possibleTypes {\n    ...TypeRef\n    __typename\n  }\n  __typename\n}\n\nfragment InputValue on __InputValue {\n  name\n  description\n  type {\n    ...TypeRef\n    __typename\n  }\n  defaultValue\n  __typename\n}\n\nfragment TypeRef on __Type {\n  kind\n  name\n  ofType {\n    kind\n    name\n    ofType {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                __typename\n              }\n              __typename\n            }\n            __typename\n          }\n          __typename\n        }\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n  __typename\n}\n",
+      "id": "LsY-vul"
+    },
+    {
+      "operationName": "MyQuery",
+      "variables": {},
+      "query": "query MyQuery {\n  rockets {\n    id\n    name\n    wikipedia\n    __typename\n  }\n}\n",
+      "id": "h9bbHIR"
+    },
+    {
+      "operationName": "getRockets",
+      "variables": {},
+      "query": "query getRockets {\n  capsule(id: \"\") {\n    id\n    __typename\n  }\n  rockets {\n    id\n    name\n    description\n    cost_per_launch\n    __typename\n  }\n}\n",
+      "id": "8OTu7Ma"
+    },
+    {
+      "operationName": "IntrospectionQuery",
+      "variables": {},
+      "query": "query IntrospectionQuery {\n  __schema {\n    queryType {\n      name\n      __typename\n    }\n    mutationType {\n      name\n      __typename\n    }\n    subscriptionType {\n      name\n      __typename\n    }\n    types {\n      ...FullType\n      __typename\n    }\n    directives {\n      name\n      description\n      locations\n      args {\n        ...InputValue\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n\nfragment FullType on __Type {\n  kind\n  name\n  description\n  fields(includeDeprecated: true) {\n    name\n    description\n    args {\n      ...InputValue\n      __typename\n    }\n    type {\n      ...TypeRef\n      __typename\n    }\n    isDeprecated\n    deprecationReason\n    __typename\n  }\n  inputFields {\n    ...InputValue\n    __typename\n  }\n  interfaces {\n    ...TypeRef\n    __typename\n  }\n  enumValues(includeDeprecated: true) {\n    name\n    description\n    isDeprecated\n    deprecationReason\n    __typename\n  }\n  possibleTypes {\n    ...TypeRef\n    __typename\n  }\n  __typename\n}\n\nfragment InputValue on __InputValue {\n  name\n  description\n  type {\n    ...TypeRef\n    __typename\n  }\n  defaultValue\n  __typename\n}\n\nfragment TypeRef on __Type {\n  kind\n  name\n  ofType {\n    kind\n    name\n    ofType {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                __typename\n              }\n              __typename\n            }\n            __typename\n          }\n          __typename\n        }\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n  __typename\n}\n",
+      "id": "gtWgAxF"
+    },
+    {
+      "operationName": "getRockets",
+      "variables": {},
+      "query": "query getRockets {\n  capsule(id: \"\") {\n    id\n    __typename\n  }\n  rockets {\n    id\n    name\n    description\n    cost_per_launch\n    __typename\n  }\n}\n",
+      "id": "r4v1TUU"
+    },
+    {
+      "operationName": "IntrospectionQuery",
+      "variables": {},
+      "query": "query IntrospectionQuery {\n  __schema {\n    queryType {\n      name\n      __typename\n    }\n    mutationType {\n      name\n      __typename\n    }\n    subscriptionType {\n      name\n      __typename\n    }\n    types {\n      ...FullType\n      __typename\n    }\n    directives {\n      name\n      description\n      locations\n      args {\n        ...InputValue\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n\nfragment FullType on __Type {\n  kind\n  name\n  description\n  fields(includeDeprecated: true) {\n    name\n    description\n    args {\n      ...InputValue\n      __typename\n    }\n    type {\n      ...TypeRef\n      __typename\n    }\n    isDeprecated\n    deprecationReason\n    __typename\n  }\n  inputFields {\n    ...InputValue\n    __typename\n  }\n  interfaces {\n    ...TypeRef\n    __typename\n  }\n  enumValues(includeDeprecated: true) {\n    name\n    description\n    isDeprecated\n    deprecationReason\n    __typename\n  }\n  possibleTypes {\n    ...TypeRef\n    __typename\n  }\n  __typename\n}\n\nfragment InputValue on __InputValue {\n  name\n  description\n  type {\n    ...TypeRef\n    __typename\n  }\n  defaultValue\n  __typename\n}\n\nfragment TypeRef on __Type {\n  kind\n  name\n  ofType {\n    kind\n    name\n    ofType {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                __typename\n              }\n              __typename\n            }\n            __typename\n          }\n          __typename\n        }\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n  __typename\n}\n",
+      "id": "Rs6NHbz"
+    },
+    {
+      "operationName": "getRockets",
+      "variables": {},
+      "query": "query getRockets {\n  capsule(id: \"\") {\n    id\n    __typename\n  }\n  rockets {\n    id\n    name\n    description\n    cost_per_launch\n    __typename\n  }\n}\n",
+      "id": "CXmtPtr"
+    },
+    {
+      "operationName": "IntrospectionQuery",
+      "variables": {},
+      "query": "query IntrospectionQuery {\n  __schema {\n    queryType {\n      name\n      __typename\n    }\n    mutationType {\n      name\n      __typename\n    }\n    subscriptionType {\n      name\n      __typename\n    }\n    types {\n      ...FullType\n      __typename\n    }\n    directives {\n      name\n      description\n      locations\n      args {\n        ...InputValue\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n\nfragment FullType on __Type {\n  kind\n  name\n  description\n  fields(includeDeprecated: true) {\n    name\n    description\n    args {\n      ...InputValue\n      __typename\n    }\n    type {\n      ...TypeRef\n      __typename\n    }\n    isDeprecated\n    deprecationReason\n    __typename\n  }\n  inputFields {\n    ...InputValue\n    __typename\n  }\n  interfaces {\n    ...TypeRef\n    __typename\n  }\n  enumValues(includeDeprecated: true) {\n    name\n    description\n    isDeprecated\n    deprecationReason\n    __typename\n  }\n  possibleTypes {\n    ...TypeRef\n    __typename\n  }\n  __typename\n}\n\nfragment InputValue on __InputValue {\n  name\n  description\n  type {\n    ...TypeRef\n    __typename\n  }\n  defaultValue\n  __typename\n}\n\nfragment TypeRef on __Type {\n  kind\n  name\n  ofType {\n    kind\n    name\n    ofType {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                __typename\n              }\n              __typename\n            }\n            __typename\n          }\n          __typename\n        }\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n  __typename\n}\n",
+      "id": "VTe7Fhk"
+    },
+    {
+      "operationName": "IntrospectionQuery",
+      "variables": {},
+      "query": "query IntrospectionQuery {\n  __schema {\n    queryType {\n      name\n      __typename\n    }\n    mutationType {\n      name\n      __typename\n    }\n    subscriptionType {\n      name\n      __typename\n    }\n    types {\n      ...FullType\n      __typename\n    }\n    directives {\n      name\n      description\n      locations\n      args {\n        ...InputValue\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n\nfragment FullType on __Type {\n  kind\n  name\n  description\n  fields(includeDeprecated: true) {\n    name\n    description\n    args {\n      ...InputValue\n      __typename\n    }\n    type {\n      ...TypeRef\n      __typename\n    }\n    isDeprecated\n    deprecationReason\n    __typename\n  }\n  inputFields {\n    ...InputValue\n    __typename\n  }\n  interfaces {\n    ...TypeRef\n    __typename\n  }\n  enumValues(includeDeprecated: true) {\n    name\n    description\n    isDeprecated\n    deprecationReason\n    __typename\n  }\n  possibleTypes {\n    ...TypeRef\n    __typename\n  }\n  __typename\n}\n\nfragment InputValue on __InputValue {\n  name\n  description\n  type {\n    ...TypeRef\n    __typename\n  }\n  defaultValue\n  __typename\n}\n\nfragment TypeRef on __Type {\n  kind\n  name\n  ofType {\n    kind\n    name\n    ofType {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                __typename\n              }\n              __typename\n            }\n            __typename\n          }\n          __typename\n        }\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n  __typename\n}\n",
+      "id": "9gbHBWi"
+    },
+    {
+      "operationName": "MyQuery",
+      "variables": {},
+      "query": "query MyQuery {\n  getCityByName(name: \"Midrand\", country: \"South Africa\") {\n    coord {\n      lat\n      lon\n      __typename\n    }\n    __typename\n  }\n  getCityById(id: \"\") {\n    country\n    name\n    __typename\n  }\n}\n",
+      "id": "S6KXBAI"
+    }
+  ]
+}

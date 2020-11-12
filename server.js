@@ -2,9 +2,11 @@
 const express = require('express');
 const { graphqlHTTP } = require('express-graphql');
 const schema = require('./schema.js');
+var cors = require('cors')
 
 //App Variable and init express
 const app = express();
+app.use(cors()) //localhost graphql server is nothing without this :
 
 //Entry point for any client that wants to interact with graphql in our server
 app.use('/graphql', graphqlHTTP({
