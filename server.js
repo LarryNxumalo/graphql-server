@@ -16,7 +16,7 @@ app.use('/graphql', graphqlHTTP({
     graphiql:true
 }));
 
-//We wanna be able to run our server on port 4K
+//We wanna be able to run our server on port 4K, you can change the port to any number
 app.listen(4000, () => {
     console.log('Server is running on port 4K :p');
 })

@@ -11,42 +11,50 @@ const {
     GraphQLNonNull
 } = require('graphql');
 
-// Customer Type
-const CustomerType = new GraphQLObjectType({
-    name: 'Customer',
+//Object Types
+// Song Type - We declare a type using the type keyword
+// Schema containing object types that contain fields each field has a type of it's own
+// each field can be scalar such as Int or a String OR it can be another object type
+// A field can also contain a list, indicated by square brackets:
+const SongType = new GraphQLObjectType({
+    name: 'song', // all object types have to have a name
     fields: () => ({
         id: {type: GraphQLString},
-        name: {type: GraphQLString},
-        email: {type: GraphQLString},
-        age: {type: GraphQLInt},
+        albumart: {type: GraphQLString},
+        author: {type: GraphQLString},
+        song: {type: GraphQLString},
+        json: {type: GraphQLString},
+        audio: {type: GraphQLString},
+        points: {type: GraphQLString}
     })
 })
 
-// Root Query - all object types have to have a name
+
+// The Query Type -
 const RootQuery = new GraphQLObjectType({
-    name: 'RootQueryType',
+    name: 'RootQueryType', // all object types have to have a name
     fields: {
-        customer: {
-            type: CustomerType,
+        songs: {
+            type: SongType,
             args: {
                 id:{type:GraphQLString}
             },
-            resolve(parentValue, args){
-                // for(let i = 0; i < customers.length; i++){
-                //     if(customers[i].id == args.id){
-                //         return customers[i];
-                //     }
-                // }
-                return axios.get('http://localhost:3000/customers/'+ args.id)
+            resolve(songs, args){
+                for(let i = 0; i < songs.length; i++){
+                    if(songs[i].id == args.id){
+                        return songs[i];
+                    }
+                }
+                return axios.get('http://localhost:3000/songs/'+ args.id)
                     .then(res => res.data);
             }
         },
 
-        customers: {
-            type: new GraphQLList(CustomerType),
+        songs: {
+            type: new GraphQLList(SongType),
             resolve(parentValue, args){
-                // return customers;
-                return axios.get('http://localhost:3000/customers/')
+                // return songs;
+                return axios.get('http://localhost:3000/songs/')
                     .then(res => res.data);
             }
         }
@@ -55,6 +63,7 @@ const RootQuery = new GraphQLObjectType({
 });
 
 // Hardcoded Data which is now in the data.json file
+//eg.
 // const customers = [
 //     {
 //         id:'1',
